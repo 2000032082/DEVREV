@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Bookings</title>
+</head>
+<body>
+    <h1>Flight Bookings</h1>
+    <table>
+        <tr>
+            <th>Booking ID</th>
+            <th>User</th>
+        </tr>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.id }}</td>
+            <td>{{ booking.user.username }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
